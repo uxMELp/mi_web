@@ -1,0 +1,86 @@
+/*-------------------------------*//*footer*/
+footer {
+    color: #2A4421;
+    font-size: 0.875rem; /* 14px convertido a rem (basado en font-size: 16px por defecto) */
+    padding: 0.625rem; /* 10px convertido a rem */
+    margin-top: auto; /* Asegura que el footer esté al final de la página */
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las columnas */
+    width: 30%; /* Esto sigue bien para que el footer ocupe el 30% del contenedor */
+}
+
+footer {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal; /* Cambié 'weight' por 'normal' */
+    font-style: normal;
+}
+
+
+footer .columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos de cada columna a la izquierda */
+}
+
+
+footer p {
+    margin: 0 0 0.3125rem 0; /* 5px convertido a rem */
+}
+
+.instagram1, .instagram2, .correo1, .correo2 {
+    display: block;
+}
+
+
+.insta{
+    width: 5.3125rem;
+    height: 5.75rem;
+}
+
+.gmail{
+    width: 5.3125rem;
+    height: 3rem;
+}
+
+.miig{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.mimail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto del padre */
+}
+
+/*-------------------------------*//*Media Queries para pantallas más pequeñas*/
+@media screen and (max-width: 768px) {
+    footer {
+        color: #2A4421;
+        font-size: 0.500rem; /* 14px convertido a rem (basado en font-size: 16px por defecto) */
+        padding: 0.25rem; /* 10px convertido a rem */
+        margin-top: auto; /* Asegura que el footer esté al final de la página */
+        display: flex;
+        justify-content: space-between; /* Distribuye el espacio entre las columnas */
+        width: 30%; /* Esto sigue bien para que el footer ocupe el 30% del contenedor */
+    }
+
+    .insta{
+        width: 3rem;
+        height: auto;
+    }
+    
+    .gmail{
+        width: 3rem;
+        height: auto;
+    }
+
+    
+}    

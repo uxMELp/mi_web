@@ -1,0 +1,222 @@
+body {
+    text-align: center;
+    background-color: #F4FDE3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Hace que el body sea una columna */
+    overflow: hidden; /* Elimina el scroll */
+
+}
+
+
+
+/*-------------------------------*//*main*/
+
+/* Imagen en el centro */
+.melfoto {
+    width: 25%; /* Ajuste el tamaño para pantallas más pequeñas */
+    height: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50%;  /* Centro vertical */
+    left: 50%; /* Centro horizontal */
+    transform: translate(-190%, -115%); /* Ajuste para centrar */
+}
+
+.habilidades, .trabajos, .contactar {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421; /* Color de fondo del botón */
+    color: white; /* Color de letras */
+    padding: 1% 2%;  /* Relleno o espacio dentro del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 0.25rem 0.125rem;
+    border-radius: 3.125rem;
+    border: none;
+    cursor: pointer; /* Cambia el cursor cuando pasa por encima */
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem;
+}
+
+.habilidades {
+    right: 40%;  /* Dependiendo del tamaño del contenedor */
+}
+
+.trabajos {
+    right: 85%;  /* Dependiendo del tamaño del contenedor */
+}
+
+.contactar {
+    right: 2%;  /* Dependiendo del tamaño del contenedor */
+}
+
+
+.habilidades:hover, .trabajos:hover, .contactar:hover {
+    background-color: #FEB5C6;
+}
+
+.botones {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.textosobremi {
+    max-width: 30%; /* Reduce el tamaño del texto */
+    padding: 1.25rem; /* Espaciado interno */
+    position: relative; /* Permite que se ajuste sin tapar otros elementos */
+    margin-left: 5%; /* Para que no quede pegado al borde */
+    text-align: left;
+    top: 30%;  /* La coloca en el centro de la pantalla */
+}
+
+.psobremi{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.sobremi{
+    color: #FEB5C6;
+
+}
+
+.sobremi{
+    font-family: "Rubik Bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen */
+    justify-content: center; /* Mantiene todo alineado */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    gap: 1.25rem;; /* Espacio entre elementos */
+}
+
+
+/*-------------------------------*//*footer*/
+footer {
+    color: #2A4421;
+    font-size: 1rem; 
+    display: flex;
+    justify-content: space-between; /* Mantiene la organización */
+    width: 30%; /* No se toca porque define el tamaño */
+    position: absolute; /* Permite moverlo sin afectar el flujo */
+    right: 0; /* Lo alinea a la derecha */
+    top: 50%; /* Lo centra verticalmente */
+    transform: translateY(-50%); /* Ajusta el centro */
+}
+
+footer{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+
+/* ESTO NO SE TOCA YA QUE ES LO QUE MANTIENE AL FOOTER ORGANIZADO */
+footer p {
+    margin: 0 0 0.3125rem 0;  /* Añade margen inferior para separarlos */
+}
+
+.instagram1, .instagram2, .correo1, .correo2 {
+    display: block;
+}
+
+.insta {
+    width: 90%;          /* Se ajusta al 20% del contenedor */
+    max-width: 85px;     /* No se hace más grande de 85px */
+    height: auto;        /* Mantiene la proporción */
+}
+
+.gmail {
+    width: 90%;          /* Se ajusta al 20% del contenedor */
+    max-width: 85px;     /* No se hace más grande de 85px */
+    height: auto;        /* Mantiene la proporción */
+}
+
+.miig, .mimail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/* En pantallas pequeñas, por ejemplo móviles */
+@media (max-width: 768px) {
+    .melfoto {
+        width: 0%; /* Imagen más pequeña en móviles */
+    }
+
+    .habilidades, .trabajos, .contactar {
+        font-size: 1rem; /* Tamaño de texto más grande */
+        padding: 1% 1%;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de los botones a columna */
+        gap: 1rem; /* Espacio entre botones */
+        align-items: center;
+    }
+
+    .habilidades {
+        right: 45%;  /* Dependiendo del tamaño del contenedor */
+    }
+    
+    .trabajos {
+        right: 75%;  /* Dependiendo del tamaño del contenedor */
+    }
+    
+    .contactar {
+        right: 15%;  /* Dependiendo del tamaño del contenedor */
+    }
+    
+
+    .textosobremi {
+        max-width: 50%; /* Texto más grande */
+        padding: 10% 0% 180% 15% ;
+    }
+
+
+
+    .botones .textosobremi .footer{
+        gap: 0rem;
+    }
+
+    footer {
+        color: #2A4421;
+        font-size: 0.500rem; /* 14px convertido a rem (basado en font-size: 16px por defecto) */
+        padding: 0.25rem; /* 10px convertido a rem */
+        margin-top: auto; /* Asegura que el footer esté al final de la página */
+        display: flex;
+        justify-content: space-between; /* Distribuye el espacio entre las columnas */
+        width: 30%; /* Esto sigue bien para que el footer ocupe el 30% del contenedor */
+        padding: 90% 10% 0% 0% ;
+    }
+
+    .insta{
+        width: 3rem;
+        height: auto;
+    }
+    
+    .gmail{
+        width: 3rem;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,131 @@
+/* Estilos globales */
+body {
+    font-family: "Montserrat", serif;
+    text-align: left;
+    background-color: #F4FDE3;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+}
+
+/* Contenedor principal para 'main' */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+    gap: 1.25rem; /* 20px */
+    padding: 6.25rem; /* 100px */
+    margin-top: 6.875rem; /* 110px */
+    max-width: 75rem; /* 1200px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Títulos de las secciones */
+h2 {
+    font-family: "Montserrat Alternates", serif;
+    color: #2A4421;
+    font-size: 1.75rem; /* 28px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+h1 {
+    font-family: 'Rubik Bubbles', sans-serif;
+    color: #FEB5C6;
+}
+
+/* Contenedor de los botones, alineado abajo a la derecha */
+.buttons {
+    position: fixed;
+    bottom: 1.25rem; /* 20px */
+    right: 1.25rem; /* 20px */
+}
+
+/* Estilos de los botones */
+button {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421;
+    color: white;
+    padding: 0.9375rem 2rem; /* 15px 32px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem; /* 24px */
+    margin: 0.25rem 0.125rem; /* 4px 2px */
+    border-radius: 3.125rem; /* 50px */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FEB5C6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2A4421;
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        display: inline;
+        grid-template-columns: 1fr 1fr; /* Dos columnas del mismo tamaño */
+        gap: 1.5rem; /* 20px */
+        padding: 6.25rem; /* 100px */
+        margin-top: 6.875rem; /* 110px */
+        max-width: 75rem; /* 1200px */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        font-family: "Montserrat Alternates", serif;
+        color: #2A4421;
+        font-size: 1rem; /* 28px */
+        margin-bottom: 0.5rem; /* 20px */
+    }
+
+    .contenedor1 li{
+        font-size: 0.5rem;
+    }
+
+    .contenedor2 li{
+        font-size: 0.5rem;
+    }
+    
+    .buttons {
+        margin-top: 2.5rem; /* 2.5rem en lugar de px */
+    }
+    
+    button {
+        font-size: 0.9rem; /* 24px */
+        margin: 0.25rem 0.125rem; /* 4px 2px */
+        border-radius: 3rem; /* 50px */
+        display: grid;
+    }
+    
+    .contact {
+        bottom: 1rem; /* Coloca el primer botón más arriba */
+    }
+
+    .past-work {
+        bottom: 3.125rem; /* Coloca el primer botón más arriba */
+    }
+
+    footer {
+        padding: 0% 10% 0% 0%; /* Ajuste el padding del footer */
+    }
+}

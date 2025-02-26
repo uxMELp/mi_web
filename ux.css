@@ -1,0 +1,210 @@
+/* Estilos para la sección de precios y trabajos */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #F4FDE3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Hace que el body sea una columna */
+}
+
+
+
+.pricing {
+    padding: 120px 20px 40px 20px; /* Añadir más espacio en la parte superior */
+    background-color: #F4FDE3;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pricing h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Rubik Bubbles', sans-serif;
+    color: #FEB5C6;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 10x solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #2A4421;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32px; /* Hacer el precio más grande */
+    background-color: #FEB5C6;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 18px 30px; /* Aumento del padding para hacer la caja más grande */
+    color: #2A4421;
+    border-radius: 40px; /* Bordes mucho más redondeados */
+    text-align: center;
+    display: inline-block;
+    cursor: default;
+    box-shadow: 0 4px 8px rgba(149, 167, 144, 0.1);
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Espacio adicional arriba */
+    margin-bottom: 20px; /* Aumentar el espacio entre las cajas */
+}
+
+.price:hover {
+    background-color: #F4FDE3; /* Cambio de color en hover */
+}
+
+h2 {
+    font-family: "Montserrat Alternates", serif;
+
+}
+.card ul {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+button {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421;/*color de fondo del boton*/
+    color: white;/*color de letras*/
+    padding: 15px 32px;  /*relleno o espacio dentro del boton osea "margen" vertical y horizontal*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer; /*cambia el curso cuando pasa por encima*/
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+button:hover {
+    background-color: #FEB5C6;
+}
+
+.past-work{
+    right: 250px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 15%;  /* Asegura que las cards se adapten en pantallas pequeñas */
+        margin-bottom: 1.25rem;
+    }
+    
+.card ul{
+    font-size: 0.3rem; /* Cambié de px a rem */
+
+}
+.card .subtitulo{
+   font-size: 0.380rem;
+}
+    .card h2 {
+        font-size: 0.600rem; /* Cambié de px a rem */
+        color: #2A4421;
+        margin-bottom: 0.625rem; /* Cambié de px a rem */
+    }
+    
+    .price {
+        font-size: 0.500rem; /* Cambié de px a rem */
+        background-color: #FEB5C6;
+        font-weight: bold;
+        margin-bottom: 1rem; /* Cambié de px a rem */
+        padding: 1rem 1rem; /* Cambié de px a rem */
+        color: #2A4421;
+        border-radius: 2.5rem; /* Cambié de px a rem */
+        text-align: center;
+        display: inline-block;
+        cursor: default;
+        box-shadow: 0 0.25rem 0.5rem rgba(149, 167, 144, 0.1);
+        transition: background-color 0.3s;
+        margin-top: 0.625rem; /* Cambié de px a rem */
+        margin-bottom: 1.25rem; /* Cambié de px a rem */
+    }
+.apartir{
+display: none;
+}
+    .subtitulo {
+        font-size: 0.600rem; /* Cambié de px a rem */
+
+    }
+    .buttons {
+        margin-top: 2.5rem; /* Cambié de px a rem */
+    }
+    
+    button {
+        color: white;
+        padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem; /* En lugar de 24px */
+        margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+        border-radius: 3.125rem; /* En lugar de 50px */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: absolute;
+        bottom: 1.25rem; /* En lugar de 20px */
+        right: 1rem;
+        left: 1rem;
+    }
+    
+    
+    .contact{
+        bottom: 1rem; /* Coloca el primer botón más arriba */
+    }
+    .past-work {
+        bottom: 5rem; /* Coloca el primer botón más arriba */
+    
+    }
+
+    footer{
+        padding: 0% 40% 50%;
+    }
+}

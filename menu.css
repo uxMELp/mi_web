@@ -1,0 +1,119 @@
+/*-------------------------------*//*menu*/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1440px; /* Limita el ancho del menú */
+    margin: 0 auto; /* Centra el menú */
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Asegura que el menú se mantenga arriba del contenido */
+}
+
+.logo img {
+   height: 85px; 
+}
+
+.espacio {
+    flex-grow: 1; /* Crea un espacio grande entre el logo y el menú */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2A4421;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px; /* Añadido padding para hacer los enlaces más grandes y clicables */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.menu a:hover {
+    color: #FEB5C6;
+}
+
+.menu {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Estilos para el menú hamburguesa en dispositivos pequeños */
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem; /* Usa rem o % en vez de px */
+    right: 1.5rem;
+}
+
+.menu.active{
+    display: block;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) { 
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .menu.active {
+        transform: translateY(0);
+    }
+
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .menu ul.active {
+        display: flex; /* Se muestra cuando se activa */
+    }
+
+    .menu li {
+        margin: 1rem 0; /* Espacio entre los elementos del menú en vista móvil */
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        padding: 0% 15% 0% 0%;
+        font-size: 3rem;
+
+
+    
+    }
+
+    .instagram1, .instagram2, .correo1, .correo2 {
+        width: 100%; /* Hace que cada p ocupe el 100% en pantallas pequeñas */
+        display: block;
+        text-align: center;
+    }
+
+}

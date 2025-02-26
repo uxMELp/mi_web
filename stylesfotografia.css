@@ -1,0 +1,254 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #F4FDE3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem; /* 20px a rem */
+}
+
+header {
+    width: 100%;
+    text-align: right;
+    padding: 0.625rem; /* 10px a rem */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 62.5rem; /* 1000px a rem */
+}
+
+.left {
+    text-align: center;
+}
+
+.left h1 {
+    font-size: 1.5rem; /* 24px a rem */
+    color: #FEB5C6;
+}
+
+.social img {
+    width: 1.875rem; /* 30px a rem */
+    margin: 0.3125rem; /* 5px a rem */
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactar {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421;
+    color: white;
+    padding: 0.9375rem 2rem;  /* 15px 32px a rem */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem; /* 24px a rem */
+    margin: 0.25rem 0.125rem; /* 4px 2px a rem */
+    border-radius: 3.125rem; /* 50px a rem */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem; /* 20px a rem */
+    right: 1.25rem; /* 20px a rem */
+}
+
+.contactar:hover {
+    background-color: #FEB5C6;
+}
+
+.trabajos {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421;
+    color: white;
+    padding: 0.9375rem 2rem;  /* 15px 32px a rem */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem; /* 24px a rem */
+    margin: 0.25rem 0.125rem; /* 4px 2px a rem */
+    border-radius: 3.125rem; /* 50px a rem */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem; /* 20px a rem */
+    right: 15.625rem; /* 250px a rem */
+}
+
+.trabajos:hover {
+    background-color: #FEB5C6;
+}
+
+.left img {
+    width: 91.375rem; /* 300px a rem */
+    max-width: 18.75rem; /* 300px a rem */
+    height: auto;
+    margin-bottom: 0.625rem; /* 10px a rem */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.fotografiatitulo {
+    font-family: "Rubik Bubbles", serif;
+    font-weight: 400;
+    font-size: 4rem; /* 64px a rem */
+    color: #FEB5C6;
+    text-align: center;
+    margin-top: 8.125rem; /* 130px a rem */
+    position: relative;
+    z-index: 1;
+}
+
+.botonesservicios {
+    position: absolute;
+    right: 1.25rem; /* 20px a rem */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem; /* 15px a rem */
+}
+
+.botonesservicios button {
+    font-family: "Montserrat Alternates", serif;
+    color: #2A4421;
+    background-color: #F4FDE3;
+    padding: 0.9375rem 2rem; /* 15px 32px a rem */
+    text-align: center;
+    text-decoration: none;
+    font-size: 4rem; /* 64px a rem */
+    border-radius: 3.125rem; /* 50px a rem */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 31.25rem; /* 500px a rem */
+}
+
+.botonesservicios button:hover {
+    color: #2A4421;
+    background-color: #FEB5C6;
+}
+
+.botonesservicios {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem; /* 15px a rem */
+}
+
+/*-------------------------------*//*Media Queries para pantallas más pequeñas*/
+@media screen and (max-width: 768px) {
+    .contactar {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        bottom: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .contactar {
+        background-color: #2A4421;
+        color: white;
+        padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem; /* En lugar de 24px */
+        margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+        border-radius: 3.125rem; /* En lugar de 50px */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: absolute;
+        bottom: 1.25rem; /* En lugar de 20px */
+        right: 1.25rem;
+    }
+
+    .trabajos{
+        background-color: #2A4421;
+        color: white;
+        padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem; /* En lugar de 24px */
+        margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+        border-radius: 3.125rem; /* En lugar de 50px */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: absolute;
+        bottom: 1.25rem; /* En lugar de 20px */
+        right: 1.25rem;
+    }
+    
+/* Coloca los botones uno encima del otro */
+.contactar {
+    bottom: 1rem; /* Coloca el primer botón más arriba */
+}
+
+.trabajos {
+    bottom: 5rem; /* Coloca el segundo botón debajo del primero */
+}
+
+.left img{ 
+display: none;
+}
+
+.botonesservicios {
+    position: fixed;
+    left: 20%;
+    right: 50%; 
+    bottom: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; 
+}
+
+.botonesservicios button {
+    font-family: "Montserrat Alternates", serif;
+    color: #2A4421;
+    background-color: #F4FDE3;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem; /* 64px a rem */
+    border-radius: 3.125rem; /* 50px a rem */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 400%; 
+    max-width: 20rem;
+}
+
+
+}

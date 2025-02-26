@@ -1,0 +1,120 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #F4FDE3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------------------*//*main*/
+main {
+    margin-top: 5rem; /* En lugar de 80px */
+    padding: 1.25rem; /* En lugar de 20px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 5rem);
+}
+
+/*-------------------------------*//*botón contactar*/
+.contactar {
+    background-color: #2A4421;
+    color: white;
+    padding: 0.9375rem 2rem;  /* En lugar de 15px 32px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem; /* En lugar de 24px */
+    margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+    border-radius: 3.125rem; /* En lugar de 50px */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem; /* En lugar de 20px */
+    right: 1.25rem;
+}
+
+.contactar:hover {
+    background-color: #FEB5C6;
+}
+
+/*-------------------------------*//*bienvenida y pbienvenida*/
+.textobienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bienvenida {
+    color: #FEB5C6;
+    font-size: 8rem; /* En lugar de 128px */
+    margin: 0;
+    font-family: "Rubik Bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pbienvenida {
+    color: #2A4421;
+    font-size: 1.25rem; /* En lugar de 20px */
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contactar {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*-------------------------------*//*Media Queries para pantallas más pequeñas*/
+@media screen and (max-width: 768px) {
+    .bienvenida {
+        font-size: 3rem; /* Reduce el tamaño en pantallas más pequeñas */
+    }
+
+    .pbienvenida {
+        font-size: 0.900rem;
+    }
+
+    .contactar {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        bottom: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .contactar {
+        background-color: #2A4421;
+        color: white;
+        padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem; /* En lugar de 24px */
+        margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+        border-radius: 3.125rem; /* En lugar de 50px */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: absolute;
+        bottom: 1.25rem; /* En lugar de 20px */
+        right: 1.25rem;
+    }
+
+
+}
+
+

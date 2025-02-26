@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #F4FDE3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Hace que el body sea una columna */
+}
+
+/*-------------------------------*//*main*/
+/* Contenedor principal */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px a rem */
+    gap: 1.875rem; /* 30px a rem */
+    padding: 1.25rem; /* 20px a rem */
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 100%; /* Asegura que el main ocupe toda la altura disponible */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #2A4421;
+}
+
+.servicios {
+    font-family: "Rubik Bubbles", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FEB5C6;
+    text-align: center;
+    margin-top: 8.125rem; /* 130px a rem */
+    position: relative; /* Se asegura que no quede tapado */
+    z-index: 1; /* Asegura que esté por encima del menú */
+}
+
+.contactar {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421; /* Color de fondo del botón */
+    color: white; /* Color de letras */
+    padding: 0.9375rem 2rem; /* 15px 32px a rem */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem; /* 24px a rem */
+    margin: 0.25rem 0.125rem; /* 4px 2px a rem */
+    border-radius: 50px;
+    border: none;
+    cursor: pointer; /* Cambia el cursor cuando pasa por encima */
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem; /* 20px a rem */
+    right: 1.25rem; /* 20px a rem */
+}
+
+.contactar:hover {
+    background-color: #FEB5C6;
+}
+
+/* Estilos para cada contenedor */
+.contenedorph, .contenedorux, .contenedormerch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 18.75rem; /* 300px a rem */
+    margin: auto; /* Centra los elementos dentro de la grid */
+}
+
+/* Ajuste de imágenes */
+.contenedorph img, .contenedorux img, .contenedormerch img {
+    width: 200%;
+    max-width: 12.5rem; /* 200px a rem */
+    height: auto;
+    margin-bottom: 0.625rem; /* 10px a rem */
+    border-radius: 50%; /* Hace las imágenes redondas */
+    object-fit: cover; /* Asegura que se vean bien en caso de que no sean cuadradas */
+}
+
+/*-------------------------------*//*Media Queries para pantallas más pequeñas*/
+@media screen and (max-width: 768px) { 
+    /* Aquí van las modificaciones que necesites */
+    /* Estilos para cada contenedor */
+.contenedorph, .contenedorux, .contenedormerch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    max-width: 20rem; 
+    margin: auto; /* Centra los elementos dentro de la grid */
+}
+
+/* Ajuste de imágenes */
+.contenedorph img, .contenedorux img, .contenedormerch img {
+    width: 60%;
+    max-width: 5rem; 
+    height: auto;
+    margin-bottom: 1rem; 
+    padding: 0% 10% 0% 0%;
+    border-radius: 50%; /* Hace las imágenes redondas */
+    object-fit: cover; /* Asegura que se vean bien en caso de que no sean cuadradas */
+}
+
+.contenedorph p, .contenedorux p, .contenedormerch p {
+    font-size: 0.50rem; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Asegura que haya espacio adecuado entre las líneas */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.contactar {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    bottom: 0.75rem;
+    right: 0.75rem;
+}
+
+.contactar {
+    background-color: #2A4421;
+    color: white;
+    padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem; /* En lugar de 24px */
+    margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+    border-radius: 3.125rem; /* En lugar de 50px */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem; /* En lugar de 20px */
+    right: 1.25rem;
+}
+
+}

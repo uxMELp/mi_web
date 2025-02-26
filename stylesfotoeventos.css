@@ -1,0 +1,215 @@
+/* Estilos para la sección de precios y trabajos */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #F4FDE3;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Desactiva el scroll */
+}
+
+.pricing {
+    padding: 7.5rem 1.25rem 2.5rem 1.25rem; /* Cambié de px a rem */
+    background-color: #F4FDE3;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pricing h1 {
+    font-size: 2.25rem; /* Cambié de px a rem */
+    margin-bottom: 1.875rem; /* Cambié de px a rem */
+    font-family: 'Rubik Bubbles', sans-serif;
+    color: #FEB5C6;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 1.25rem; /* Cambié de px a rem */
+    width: 13.75rem; /* Cambié de px a rem */
+    margin-bottom: 1.875rem; /* Cambié de px a rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-0.625rem); /* Cambié de px a rem */
+}
+
+.card h2 {
+    font-size: 1.5rem; /* Cambié de px a rem */
+    color: #2A4421;
+    margin-bottom: 0.625rem; /* Cambié de px a rem */
+}
+
+.price {
+    font-size: 2rem; /* Cambié de px a rem */
+    background-color: #FEB5C6;
+    font-weight: bold;
+    margin-bottom: 1.25rem; /* Cambié de px a rem */
+    padding: 1.125rem 1.875rem; /* Cambié de px a rem */
+    color: #2A4421;
+    border-radius: 2.5rem; /* Cambié de px a rem */
+    text-align: center;
+    display: inline-block;
+    cursor: default;
+    box-shadow: 0 0.25rem 0.5rem rgba(149, 167, 144, 0.1);
+    transition: background-color 0.3s;
+    margin-top: 0.625rem; /* Cambié de px a rem */
+    margin-bottom: 1.25rem; /* Cambié de px a rem */
+}
+
+.price:hover {
+    background-color: #F4FDE3; /* Cambio de color en hover */
+}
+
+.card ul {
+    text-align: left;
+    padding-left: 1.25rem; /* Cambié de px a rem */
+    font-size: 1rem; /* Cambié de px a rem */
+}
+
+.card ul li {
+    margin-bottom: 0.625rem; /* Cambié de px a rem */
+}
+
+.buttons {
+    margin-top: 2.5rem; /* Cambié de px a rem */
+}
+
+button {
+    font-family: "Montserrat Alternates", serif;
+    background-color: #2A4421; /* Color de fondo del botón */
+    color: white; /* Color de letras */
+    padding: 0.9375rem 2rem;  /* Relleno o espacio dentro del botón */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem; /* Cambié de px a rem */
+    margin: 0.25rem 0.125rem; /* Cambié de px a rem */
+    border-radius: 3.125rem; /* Cambié de px a rem */
+    border: none;
+    cursor: pointer; /* Cambia el cursor cuando pasa por encima */
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 1.25rem; /* Cambié de px a rem */
+    right: 1.25rem; /* Cambié de px a rem */
+}
+
+button:hover {
+    background-color: #FEB5C6;
+}
+
+.past-work {
+    right: 15.625rem; /* Cambié de px a rem */
+}
+
+h2 {
+    font-family: "Montserrat Alternates", serif;
+}
+
+footer {
+    margin-top: -1.25rem; /* Cambié de px a rem */
+    padding: 0% 0% 50% 0%; /* Ajusta el espaciado interno del footer */
+}
+
+
+/*-------------------------------*//*Media Queries para pantallas más pequeñas*/
+@media screen and (max-width: 768px) {
+    
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 15%;  /* Asegura que las cards se adapten en pantallas pequeñas */
+        margin-bottom: 1.25rem;
+    }
+    
+.card ul{
+    font-size: 0.3rem; /* Cambié de px a rem */
+
+}
+.card .subtitulo{
+   font-size: 0.380rem;
+}
+    .card h2 {
+        font-size: 0.600rem; /* Cambié de px a rem */
+        color: #2A4421;
+        margin-bottom: 0.625rem; /* Cambié de px a rem */
+    }
+    
+    .price {
+        font-size: 0.500rem; /* Cambié de px a rem */
+        background-color: #FEB5C6;
+        font-weight: bold;
+        margin-bottom: 1rem; /* Cambié de px a rem */
+        padding: 1rem 1.5rem; /* Cambié de px a rem */
+        color: #2A4421;
+        border-radius: 2.5rem; /* Cambié de px a rem */
+        text-align: center;
+        display: inline-block;
+        cursor: default;
+        box-shadow: 0 0.25rem 0.5rem rgba(149, 167, 144, 0.1);
+        transition: background-color 0.3s;
+        margin-top: 0.625rem; /* Cambié de px a rem */
+        margin-bottom: 1.25rem; /* Cambié de px a rem */
+    }
+.apartir{
+display: none;
+}
+    .subtitulo {
+        font-size: 0.600rem; /* Cambié de px a rem */
+
+    }
+    .buttons {
+        margin-top: 2.5rem; /* Cambié de px a rem */
+    }
+    
+    button {
+        color: white;
+        padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem; /* En lugar de 24px */
+        margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
+        border-radius: 3.125rem; /* En lugar de 50px */
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: absolute;
+        bottom: 1.25rem; /* En lugar de 20px */
+        right: 1rem;
+        left: 1rem;
+    }
+    
+
+    
+    .contact{
+        bottom: 1rem; /* Coloca el primer botón más arriba */
+
+    }
+    .past-work {
+        bottom: 5rem; /* Coloca el primer botón más arriba */
+
+    }
+
+    footer{
+        padding: 0% 40% 50%;
+    }
+}
