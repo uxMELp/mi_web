@@ -87,7 +87,7 @@ a {
 }
 
 /*-------------------------------*//*Media Queries para pantallas más pequeñas*/
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
     /* Aquí van las modificaciones que necesites */
     /* Estilos para cada contenedor */
 .contenedorph, .contenedorux, .contenedormerch {
@@ -130,7 +130,7 @@ a {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem; /* En lugar de 24px */
+    font-size: 0.8rem; /* En lugar de 24px */
     margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
     border-radius: 3.125rem; /* En lugar de 50px */
     border: none;

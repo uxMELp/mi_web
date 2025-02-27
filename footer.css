@@ -61,7 +61,7 @@ a {
 }
 
 /*-------------------------------*//*Media Queries para pantallas más pequeñas*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     footer {
         color: #2A4421;
         font-size: 0.500rem; /* 14px convertido a rem (basado en font-size: 16px por defecto) */

@@ -80,14 +80,14 @@ footer a {
     color: #2A4421;
 }
 
-@media screen and (max-width: 48em) { /* 768px */
+@media screen and (max-width: 767px) { /* 768px */
     .container {
         display: flex;
         gap: 3rem;
         position: fixed;
         z-index: 1;
         top: 15rem;
-        left: 5rem;
+        left: 2.5rem;
     }
     
     .folder {
@@ -109,14 +109,11 @@ footer a {
         top: 5rem;
     }
 
-    .buttons {
-        margin-top: 2.5rem; /* 2.5rem en lugar de px */
-    }
     
     button {
-        font-size: 0.9rem; /* 24px */
+        font-size: 0.7rem; /* 24px */
         margin: 0.25rem 0.125rem; /* 4px 2px */
         border-radius: 3rem; /* 50px */
-        display: grid;
+        display: flex;
     }
 }

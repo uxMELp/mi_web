@@ -73,7 +73,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 0.4rem;
     }
     .menu.active {
         transform: translateY(0);

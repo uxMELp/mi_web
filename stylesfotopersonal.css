@@ -130,17 +130,27 @@ footer {
     padding: 0px 0; /* Ajusta el espaciado interno del footer */
 } /*se me corrio el footer en esta pag CAMBIARLO CUANDO SE PUEDA*/
 
-@media screen and (max-width: 768px) {
+/*-------------------------------*//*Media Queries para pantallas más pequeñas*/
+@media screen and (max-width: 767px) {
     
     .cards {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 0fr); /* 2 columnas */
+        gap: 0rem; /* Espaciado entre las cards */
+        justify-content: center;
+    
     }
     
     .card {
-        width: 15%;  /* Asegura que las cards se adapten en pantallas pequeñas */
-        margin-bottom: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Asegura que todo dentro de la card esté centrado */
+        text-align: center; /* Centra el texto dentro de la card */
+        width: 70%; /* Ocupar más espacio en la pantalla */
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.2rem 0.5rem rgba(149, 167, 144, 0.1);
     }
     
 .card ul{
@@ -157,20 +167,20 @@ footer {
     }
     
     .price {
-        font-size: 0.500rem; /* Cambié de px a rem */
+        font-size: 0.700rem; /* Cambié de px a rem */
         background-color: #FEB5C6;
         font-weight: bold;
         margin-bottom: 1rem; /* Cambié de px a rem */
-        padding: 1rem 1.5rem; /* Cambié de px a rem */
+        padding: 1rem 0.9rem; /* Cambié de px a rem */
         color: #2A4421;
         border-radius: 2.5rem; /* Cambié de px a rem */
         text-align: center;
         display: inline-block;
         cursor: default;
-        box-shadow: 0 0.25rem 0.5rem rgba(149, 167, 144, 0.1);
+        box-shadow: 0 0.2rem 0.5rem rgba(149, 167, 144, 0.1);
         transition: background-color 0.3s;
-        margin-top: 0.625rem; /* Cambié de px a rem */
-        margin-bottom: 1.25rem; /* Cambié de px a rem */
+        margin-top: 0rem; /* Cambié de px a rem */
+        margin-bottom: 1rem; /* Cambié de px a rem */
     }
 .apartir{
 display: none;
@@ -180,37 +190,52 @@ display: none;
 
     }
     .buttons {
-        margin-top: 2.5rem; /* Cambié de px a rem */
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Espacio entre los botones */
+        width: 100%;    }
     
     button {
         color: white;
-        padding: 0.9375rem 1rem;  /* En lugar de 15px 32px */
+        padding: 0.5rem 0.8rem;  /* En lugar de 15px 32px */
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 1rem; /* En lugar de 24px */
+        font-size: 0.875rem; /* En lugar de 24px */
         margin: 0.25rem 0.125rem; /* En lugar de 4px 2px */
-        border-radius: 3.125rem; /* En lugar de 50px */
+        border-radius: 2rem; /* En lugar de 50px */
         border: none;
         cursor: pointer;
         transition: background-color 0.3s;
         position: absolute;
-        bottom: 1.25rem; /* En lugar de 20px */
+        bottom: 1rem; /* En lugar de 20px */
         right: 1rem;
         left: 1rem;
+        width: 100%;
+        max-width: 24rem;
+        text-align: center;
     }
     
+    .pricing h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+        font-family: 'Rubik Bubbles', sans-serif;
+        color: #FEB5C6;
+    }
     
     .contact{
-        bottom: 1rem; /* Coloca el primer botón más arriba */
+        bottom: 9rem; /* Coloca el primer botón más arriba */
+        position: absolute;
+
     }
     .past-work {
-        bottom: 5rem; /* Coloca el primer botón más arriba */
-    
+        bottom: 12rem; /* Coloca el primer botón más arriba */
+        position: absolute;
+
     }
 
     footer{
-        padding: 0% 40% 50%;
+        padding: 30% 2% 0%;
     }
 }

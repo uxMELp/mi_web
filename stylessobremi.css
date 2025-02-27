@@ -157,14 +157,14 @@ footer p {
 }
 
 /* En pantallas pequeñas, por ejemplo móviles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .melfoto {
         width: 0%; /* Imagen más pequeña en móviles */
     }
 
     .habilidades, .trabajos, .contactar {
-        font-size: 1rem; /* Tamaño de texto más grande */
-        padding: 1% 1%;
+        font-size: 0.9rem; /* Tamaño de texto más grande */
+        padding: 2% 3%;
     }
 
     .botones {
@@ -174,39 +174,34 @@ footer p {
         align-items: center;
     }
 
+
+
     .habilidades {
-        right: 45%;  /* Dependiendo del tamaño del contenedor */
+        right: 35%;  /* Dependiendo del tamaño del contenedor */
     }
     
     .trabajos {
-        right: 75%;  /* Dependiendo del tamaño del contenedor */
+        right: 72%;  /* Dependiendo del tamaño del contenedor */
     }
     
     .contactar {
-        right: 15%;  /* Dependiendo del tamaño del contenedor */
+        right: 2%;  /* Dependiendo del tamaño del contenedor */
     }
     
 
     .textosobremi {
-        max-width: 50%; /* Texto más grande */
+        max-width: 70%; /* Texto más grande */
         padding: 10% 0% 180% 15% ;
+        font-size: 0.9rem;
     }
 
-
-
-    .botones .textosobremi .footer{
-        gap: 0rem;
-    }
 
     footer {
         color: #2A4421;
         font-size: 0.500rem; /* 14px convertido a rem (basado en font-size: 16px por defecto) */
-        padding: 0.25rem; /* 10px convertido a rem */
-        margin-top: auto; /* Asegura que el footer esté al final de la página */
-        display: flex;
-        justify-content: space-between; /* Distribuye el espacio entre las columnas */
-        width: 30%; /* Esto sigue bien para que el footer ocupe el 30% del contenedor */
-        padding: 90% 10% 0% 0% ;
+        padding: 110% 5% 0% 0%;  /* 10px convertido a rem */
+        width: 90%; /
+    
     }
 
     .insta{
@@ -218,5 +213,7 @@ footer p {
         width: 3rem;
         height: auto;
     }
+
+
 }
 
