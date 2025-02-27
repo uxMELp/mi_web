@@ -68,7 +68,7 @@
 }
 
 /* Estilos responsivos */
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
     .menu {
         display: flex;
         justify-content: space-between;
@@ -85,7 +85,7 @@
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 101%;
         left: 0;
         background: white;
         padding: 1rem;
@@ -96,7 +96,7 @@
     }
 
     .menu li {
-        margin: 1rem 0; /* Espacio entre los elementos del menú en vista móvil */
+        margin: 2rem 3rem 1rem 0rem; /* Espacio entre los elementos del menú en vista móvil */
         text-align: center;
     }
 
